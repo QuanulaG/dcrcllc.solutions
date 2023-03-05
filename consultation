@@ -57,10 +57,10 @@ function checkLoginState() {
 <img src="https://github.com/QuanulaG/DCRCLLC/blob/efecbe080bae448ba1964ac3b3ca1e7c599724cc/DCRC.png" width="652" height="360" alt=""/>
     <header>
         <nav>
-             <ul>
-                <li><a href="https://github.com/QuanulaG/DCRCLLC/blob/d4ca8e554a7f6dc8f119d37e4ae716a15fadd6bd/services.html">Services</a></li>
-                <li><a href="https://github.com/QuanulaG/DCRCLLC/blob/d4ca8e554a7f6dc8f119d37e4ae716a15fadd6bd/consultation.html">Book a Consultation</a></li>
-                <li><a href="https://github.com/QuanulaG/DCRCLLC/blob/d4ca8e554a7f6dc8f119d37e4ae716a15fadd6bd/invoices.html">View and Pay Invoices</a></li>
+              <ul>
+                <li><a href="https:www.dcrcllc.solutions/services">Services</a></li>
+                <li><a href="https:www.dcrcllc.solutions/consultation">Book a Consultation</a></li>
+                <li><a href="https:www.dcrcllc.solutions/invoices">View and Pay Invoices</a></li>
             </ul>
         </nav>
         <h1>DCRC LLC</h1>
