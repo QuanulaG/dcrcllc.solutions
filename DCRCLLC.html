@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DCRC LLC - Website and Application Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<body>
+   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '828542217843147',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v12.0'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+
+
+{
+    status: 'connected',
+    authResponse: {
+        accessToken: '...',
+        expiresIn:'...',
+        signedRequest:'...',
+        userID:'...'
+    }
+}
+
+<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+</script> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#consultation">Book a Consultation</a></li>
+                <li><a href="#invoices">View and Pay Invoices</a></li>
+            </ul>
+        </nav>
+        <h1>DCRC LLC</h1>
+        <h2>Heuristic Evaluations, Website and Application Development for Businesses</h2>
+    </header>
+    <main>
+        <section id="services">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Heuristic Evaluations</li>
+                <li>Website Development</li>
+                <li>Application Development</li>
+            </ul>
+        </section>
+        <section id="consultation">
+            <h3>Book a Consultation</h3>
+            <p>Fill out the form below to book a free consultation with one of our experts.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+				<label for="date">Date:</label>
+				<input type="date" id="date" name="date" required>
+				<label for="time">Time:</label>
+				<input type="time" id="time" name="time" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+		</section>
+		<section id="invoices">
+			<h2>View Invoices</h2>
+			<p>Please enter your invoice number below:</p>
+			<form>
+			<label for="invoice-number">Invoice Number:</label>
+			<input type="text" id="invoice-number" name="invoice-number" required>
+			<input type="submit" value="View Invoice">
+			</form>
+            <h3>View and Pay Invoices with credit card</h3>
+            <p>Use the form below to view and pay your invoices.</p>
+            <form>
+                <label for="invoice-number">Invoice Number:</label>
+                <input type="text" id="invoice-number" name="invoice-number" required>
+                <label for="invoice-amount">Invoice Amount:</label>
+                <input type="text" id="invoice-amount" name="invoice-amount" required>
+                <label for="credit-card">Credit Card Number:</label>
+                <input type="text" id="credit-card" name="credit-card" required>
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                <button type="submit">Pay Now</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 DCRC LLC. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
